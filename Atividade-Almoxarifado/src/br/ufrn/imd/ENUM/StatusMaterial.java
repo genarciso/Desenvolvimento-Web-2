@@ -1,4 +1,4 @@
-package br.ufrn.imd.model.material;
+package br.ufrn.imd.ENUM;
 
 public enum StatusMaterial {
 	ATIVO, INATIVO
