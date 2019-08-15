@@ -23,9 +23,9 @@ public class LoginServlet extends HttpServlet {
 			Usuario user = new Usuario();
 			user.setNome("genarciso");
 			req.getSession().setAttribute("usuario", user);
-			resp.sendRedirect("/Atividade-Servlet-1.0/paginas/conteudo.jsp");
+			resp.sendRedirect("/Atividade-Servlet/paginas/conteudo.jsp");
 		} else {
-			resp.sendRedirect("/Atividade-Servlet-1.0/login.jsp");
+			resp.sendRedirect("/Atividade-Servlet/login.jsp");
 		}
 	}
 }
