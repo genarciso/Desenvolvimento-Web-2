@@ -1,4 +1,4 @@
-package br.ufrn.imd.model.material;
+package br.ufrn.imd.model;
 
 import java.math.BigDecimal;
 
