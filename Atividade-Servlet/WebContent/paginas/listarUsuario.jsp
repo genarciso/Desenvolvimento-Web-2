@@ -11,9 +11,12 @@
 <body>
 	<h3>Cadastrar usuário</h3>
 	<fieldset>
-		<form action="usuario" method="post">
+		<form action="../usuario" method="post">
 			<div>
-				<p>Nome</p> <input type="text" name="nome"/>
+				<p><b>Nome</b> <input type="text" name="nome" required/></p>
+				<p><b>Login</b> <input type="text" name="login" required/></p>
+				<p><b>Senha</b> <input type="password" name="senha" required/></p>
+				<button type="submit">Salvar</button>
 			</div>
 		</form>
 	</fieldset>

@@ -9,13 +9,18 @@
 </head>
 <body>
 	<h1>ENTROU NO CONTEUDO</h1>
-	<p>Usuário: <%= ((Usuario) session.getAttribute("usuario")).getNome() %></p>
-	<form action="usuario" method="get">
-		<button type="submit">Listar</button>
-	</form>
-	
-	<form action="../sair">
-		<button type="submit">Sair</button>
-	</form>
+	<p>
+		Usuário:
+		<%=((Usuario) session.getAttribute("usuario")).getNome()%></p>
+	<div>
+		<form action="../usuario" method="get" style = "width: 10%; display: inline">
+			<button type="submit">Listar</button>
+		</form>
+
+		<form action="../sair" style = "width: 10%; display: inline">
+			<button type="submit">Sair</button>
+		</form>
+	</div>
+
 </body>
 </html>

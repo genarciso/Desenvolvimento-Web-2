@@ -20,6 +20,7 @@ public class UsuarioServlet extends HttpServlet {
 		if (request.getSession().getAttribute("usuarios") == null) {
 			request.getSession().setAttribute("usuarios", listaUsuarios);
 		}
+		response.sendRedirect("/Atividade-Servlet/paginas/listarUsuario.jsp");
 	}
 
 	
@@ -32,6 +33,7 @@ public class UsuarioServlet extends HttpServlet {
 		
 		listaUsuarios.add(usuario);
 		request.getSession().setAttribute("usuarios", listaUsuarios);
+		response.sendRedirect("/Atividade-Servlet/paginas/listarUsuario.jsp");
 	
 	}
 
