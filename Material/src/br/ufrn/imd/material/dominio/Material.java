@@ -7,7 +7,7 @@ public class Material {
 	private String codigo;
 	private String descricao;
 	private Date dataCadastro;
-	private Usuario usuarioUsuario;
+	private Usuario usuarioCadastro;
 	
 	public int getId() {
 		return id;
@@ -33,11 +33,11 @@ public class Material {
 	public void setDataCadastro(Date dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
-	public Usuario getUsuarioUsuario() {
-		return usuarioUsuario;
+	public Usuario getUsuarioCadastro() {
+		return usuarioCadastro;
 	}
-	public void setUsuarioUsuario(Usuario usuarioUsuario) {
-		this.usuarioUsuario = usuarioUsuario;
+	public void setUsuarioCadastro(Usuario usuarioCadastro) {
+		this.usuarioCadastro = usuarioCadastro;
 	}
 	
 	@Override
