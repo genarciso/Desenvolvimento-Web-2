@@ -1,0 +1,15 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:c="http://java.sun.com/jsp/jstl/core"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  template="/include/template.xhtml">
+	<ui:define name="conteudo">
+		<h4>Operações - <h:outputText value="#{usuarioMBean.usuarioLogado.nome}"></h:outputText></h4>
+		<h:form>		
+			<p> <h:commandLink action="#{materialMBean.novoMaterial}" value = "Novo Material"></h:commandLink> </p>
+			<p> <h:commandLink action="#{materialMBean.listarMateriais}" value = "Listar Materiais"></h:commandLink> </p> 
+		
+		</h:form>
+	</ui:define>
+</ui:composition>
