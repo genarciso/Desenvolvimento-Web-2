@@ -1,5 +1,7 @@
 package br.ufrn.imd.reserva.controller;
 
+import java.io.Serializable;
+
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -11,7 +13,7 @@ import br.ufrn.imd.reserva.repositorio.UsuarioRepositorio;
 
 @Named("usuarioMBean")
 @SessionScoped
-public class UsuarioMBean {
+public class UsuarioMBean implements Serializable{
 	
 	@Inject
 	private UsuarioRepositorio usuarioRepositorio;

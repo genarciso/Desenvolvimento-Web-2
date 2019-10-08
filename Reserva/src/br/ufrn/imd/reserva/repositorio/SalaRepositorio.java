@@ -8,6 +8,7 @@ import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import br.ufrn.imd.reserva.modelo.Reserva;
 import br.ufrn.imd.reserva.modelo.Sala;
 
 @Stateless
@@ -31,7 +32,17 @@ public class SalaRepositorio {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<Sala> listarMateriaisPorCodigo(String codigo) {
+	public List<Sala> listarSalas() {
+		try {
+			return (List<Sala>) em.createQuery("select s from Sala s").getResultList();
+			
+		} catch (NoResultException e) {
+			return null;
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Sala> listarSalasPorCodigo(String codigo) {
 		try {
 			Query q = em.createQuery("select s from Sala s "
 					+ "where s.codigo = :codigo");
@@ -41,5 +52,6 @@ public class SalaRepositorio {
 		} catch (NoResultException e) {
 			return null;
 		}
+	
 	}
 }

@@ -2,6 +2,7 @@ package br.ufrn.imd.reserva.filtros;
 
 import java.io.IOException;
 
+import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.ufrn.imd.reserva.modelo.Usuario;
 
 @WebFilter("/pages/*")
-public class SecurityFilter {
+public class SecurityFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 			HttpServletRequest req = (HttpServletRequest) request;

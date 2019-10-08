@@ -1,5 +1,7 @@
 package br.ufrn.imd.reserva.controller;
 
+import java.io.Serializable;
+
 import javax.enterprise.context.SessionScoped;
 import javax.faces.model.DataModel;
 import javax.inject.Inject;
@@ -10,7 +12,7 @@ import br.ufrn.imd.reserva.repositorio.ReservaRepositorio;
 
 @Named("reservaMBean")
 @SessionScoped
-public class ReservaMBean {
+public class ReservaMBean implements Serializable{
 	
 	private Reserva reserva;
 	private DataModel<Reserva> listaReserva;
@@ -48,7 +50,5 @@ public class ReservaMBean {
 	public void setListaReserva(DataModel<Reserva> listaReserva) {
 		this.listaReserva = listaReserva;
 	}
-	
-	
 	
 }
