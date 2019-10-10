@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:c="http://java.sun.com/jsp/jstl/core"
+	  xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Reserva salas</title>
+	<!--===============================================================================================-->	
+	<h:outputLink name="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<h:outputStylesheet name="vendor/bootstrap/css/bootstrap.min.css" />
+<!--===============================================================================================-->
+	<h:outputStylesheet name="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+<!--===============================================================================================-->
+	<h:outputStylesheet name="fonts/Linearicons-Free-v1.0.0/icon-font.min.css" />
+<!--===============================================================================================-->
+	<h:outputStylesheet name="vendor/animate/animate.css"/>
+<!--===============================================================================================-->	
+	<h:outputStylesheet name="vendor/css-hamburgers/hamburgers.min.css"/>
+<!--===============================================================================================-->
+	<h:outputStylesheet name="vendor/animsition/css/animsition.min.css"/>
+<!--===============================================================================================-->
+	<h:outputStylesheet name="vendor/select2/select2.min.css"/>
+<!--===============================================================================================-->	
+	<h:outputStylesheet name="vendor/daterangepicker/daterangepicker.css"/>
+<!--===============================================================================================-->
+	<h:outputStylesheet name="css/util.css"/>
+	<h:outputStylesheet name="css/main.css"/>
+<!--===============================================================================================-->
+</h:head>
+<h:body>
+	<div id="content" class="">
+		<ui:insert name="conteudo">Conteúdo</ui:insert>
+	</div>
+	<!--===============================================================================================-->
+	<h:outputScript name="vendor/jquery/jquery-3.2.1.min.js" />
+<!--===============================================================================================-->
+	<h:outputScript name="vendor/animsition/js/animsition.min.js" />
+<!--===============================================================================================-->
+	<h:outputScript name="vendor/bootstrap/js/popper.js" />
+	<h:outputScript name="vendor/bootstrap/js/bootstrap.min.js" />
+<!--===============================================================================================-->
+	<h:outputScript name="vendor/select2/select2.min.js" />
+<!--===============================================================================================-->
+	<h:outputScript name="vendor/daterangepicker/moment.min.js" />
+	<h:outputScript name="vendor/daterangepicker/daterangepicker.js" />
+<!--===============================================================================================-->
+	<h:outputScript name="vendor/countdowntime/countdowntime.js" />
+<!--===============================================================================================-->
+	<h:outputScript name="js/main.js" />
+</h:body>
 </html>
